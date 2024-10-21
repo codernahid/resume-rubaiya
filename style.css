@@ -6,26 +6,24 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 50px auto;
-    padding: 20px;
     background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .photo img {
@@ -33,7 +31,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .name-title {
@@ -41,12 +39,12 @@ body {
 }
 
 .name-title h1 {
-    font-size: 32px;
+    font-size: 36px;
     color: #003366;
 }
 
 .name-title h2 {
-    font-size: 24px;
+    font-size: 22px;
     color: #666;
 }
 
@@ -55,7 +53,7 @@ body {
     justify-content: space-between;
 }
 
-.left, .right {
+.left-column, .right-column {
     width: 48%;
 }
 
@@ -64,26 +62,29 @@ section {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
     color: #003366;
     margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
+    padding-left: 15px;
 }
 
 ul li {
     font-size: 16px;
+    line-height: 1.8;
     margin-bottom: 8px;
 }
 
 p {
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
-.contact img, .education img, .expertise img {
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
+strong {
+    color: #333;
 }
