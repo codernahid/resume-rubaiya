@@ -1,90 +1,57 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
     color: #333;
 }
 
-.container {
-    max-width: 900px;
-    margin: 50px auto;
-    background-color: white;
+header {
+    background-color: #4CAF50;
+    color: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+nav li {
+    float: left;
 }
 
-.name-title {
-    text-align: right;
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.name-title h1 {
-    font-size: 36px;
-    color: #003366;
-}
-
-.name-title h2 {
-    font-size: 22px;
-    color: #666;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-column, .right-column {
-    width: 48%;
+nav li a:hover {
+    background-color: #111;
 }
 
 section {
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
-h3 {
-    font-size: 22px;
-    color: #003366;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 15px;
-}
-
-ul li {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 8px;
-}
-
-p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-strong {
-    color: #333;
+/* Animations */
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
 }
