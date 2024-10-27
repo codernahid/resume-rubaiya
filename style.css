@@ -3,68 +3,111 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Body */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f9;
     color: #333;
-    background-color: #f5f5f5;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Header */
-.main-header {
-    background-color: #003366;
-    padding: 20px 0;
-    color: #fff;
+header {
+    width: 100%;
+    background-color: #002d72;
+    padding: 10px 0;
     text-align: center;
 }
 
-.nav-links {
-    list-style: none;
+header nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
 }
 
-.nav-links a {
-    color: #fff;
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
-.nav-links a:hover {
+header nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* Sections */
-section {
-    padding: 40px 0;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 2s;
 }
 
-h1, h2 {
-    color: #003366;
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
 }
 
 h1 {
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #002d72;
 }
 
-ul {
-    list-style-type: none;
-    font-size: 18px;
+p {
+    font-size: 1.2rem;
+}
+
+/* Section */
+.section {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.section h2 {
+    color: #002d72;
+    font-size: 1.8rem;
     margin-bottom: 15px;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
 }
 
 /* Footer */
 footer {
-    background-color: #003366;
-    color: #fff;
+    width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    background-color: #002d72;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section, .hero, footer {
+    animation: fadeIn 1s ease-in;
 }
