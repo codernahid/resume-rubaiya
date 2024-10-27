@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Rubaiya Binte Harun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li>Working as a graphics designer for around 2 years</li>
+            <li>Delegate at International Youth Conference</li>
+            <li>Math instructor at Adamjee Mathematical Club</li>
+            <li>Organizer at Glory Photography LTD</li>
+            <li>Coordinator at BAF Shaheen College, Dhaka Photography Club</li>
+            <li>Executive in Uttara Science Club</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rubaiya Binte Harun</p>
+    </footer>
+</body>
+</html>
